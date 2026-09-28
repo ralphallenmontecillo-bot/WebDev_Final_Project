@@ -11,3 +11,107 @@
     --line: #e7e8df;
     --orange: #ed9d5b;
 }
+
+form { max-width: 400px; font-family: Arial, sans-serif; }
+label { display: block; margin-top: 12px; font-weight: bold; }
+input, select, textarea { width: 100%; padding: 8px; margin-top: 4px; }
+input:focus { outline: 2px solid #0f3d3e; }
+.button-group {margin-top: 6px;}
+button {padding: 8px 16px; margin-right: 5px; cursor: pointer;}
+fieldset {max-width: 400px;}
+input {max-width: 375px;}
+
+header {
+  display: flex;
+  justify-content: space-between;  
+  align-items: normal;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #de8bf3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav {
+  flex: 1; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right; 
+  gap: 40px;              
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #e078fa;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e078fa;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.log-in {
+  background-color: #713600;  
+  color: #fff;
+}
+.log-in:hover {
+  background-color: #e078fa;   
+}
+
+.register-link {
+  background-color: #c05800;   
+  color: #fff;
+}
+.register-link:hover {
+  background-color: #e078fa;  
+}
+
+.cart-link {
+  background-color: #b8972c;  
+  color: #333;
+}
+.cart-link:hover {
+  background-color: #e078fa;  
+}
