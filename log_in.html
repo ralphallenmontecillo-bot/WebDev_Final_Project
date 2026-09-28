@@ -12,16 +12,17 @@
 <body>
     <header class="site-header">
         <nav class="nav-wrap" aria-label="Main navigation">
-            <a class="brand" href="home.html">campus<span>bites</span></a>
+            <div class="logo">Campus Bites</div>
             <ul class="header-nav">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="store.html">Store</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="nav-actions">
-                <a class="login-link" href="login.html">Log in</a><a class="register-link"
-                    href="register.html">Join</a><a class="cart-link" href="cart.html">Cart</a>
+            <div class="nav-action">
+                <a class="log-in" href="log_in.html">Log In</a>
+                <a class="register-link" href="register.html">Join</a>
+                <a class="cart-link" href="cart.html">Cart</a>
             </div>
         </nav>
     </header>
@@ -38,19 +39,21 @@
                 </div>
             </aside>
             <section class="form-card">
-                <h1>Log in</h1>
-                <p class="lead">Enter your account details to continue.</p>
-                <form action="#" method="get">
-                    <div class="field">
-                        <label for="username">Username</label><input id="username" name="username" type="text"
+                <fieldset>
+                    <h1>Log in</h1>
+                    <p class="lead">Enter your account details to continue.</p>
+                    <form action="#" method="get">
+                        <div class="field">
+                            <label for="username">Username</label><input id="username" name="username" type="text"
                             placeholder="Your username" required />
-                    </div>
-                    <div class="field">
-                        <label for="password">Password</label><input id="password" name="password" type="password"
+                        </div>
+                        <div class="field">
+                            <label for="password">Password</label><input id="password" name="password" type="password"
                             placeholder="Your password" required />
-                    </div>
-                    <button class="button button-primary" type="submit">Log in</button>
-                </form>
+                        </div><br><br>
+                        <button class="button button-primary" type="submit">Log in</button>
+                    </form>
+                </fieldset>
                 <p class="form-foot">
                     New to Campus Bites? <a href="register.html">Create an account</a>
                 </p>
